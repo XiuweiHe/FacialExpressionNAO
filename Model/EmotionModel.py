@@ -24,8 +24,6 @@ class EmotionModel(QThread):
         memProxy = ALProxy("ALMemory", self.IP, self.port)
 
 
-        #people =  ALProxy("ALFaceCharacteristics", self.IP, self.port)
-
         while (True):
             self.result = np.zeros(5)
             for i in (0, 15):
